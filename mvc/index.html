@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Address Book</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Address Book</h1>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="text" id="phone" placeholder="Phone" required>
+      <button type="submit">Add Contact</button>
+    </form>
+    <button id="showContacts">Show Contacts</button>
+    <ul id="contactList"></ul>
+  </div>
+  
+  <script src="model/contactModel.js"></script>
+  <script src="view/contactView.js"></script>
+  <script src="controller/contactController.js"></script>
+  <script>
+    const app = new ContactController();
+  </script>
+</body>
+</html>
